@@ -18,14 +18,7 @@ class _IntropageState extends State<Intropage> {
         width: double.maxFinite,
         height: double.maxFinite,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              const Color(0xFFB3E5FC).withOpacity(0.2), // Light blue color
-              const Color(0xFFFFE082), // Light yellow color
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.topRight,
-          ),
+          gradient: Cgradient.primary,
         ),
         child: Padding(
           padding: const EdgeInsets.all(30.0),
@@ -217,7 +210,9 @@ class introbar extends StatelessWidget {
                 style: TextStyle(fontSize: 15, color: Colors.black),
               )),
           Celevatedbtn(
-            onpress: () {},
+            onpress: () {
+              context.go('/registerscreen');
+            },
             text: 'Register',
             iconData: Icons.keyboard_double_arrow_right,
           )

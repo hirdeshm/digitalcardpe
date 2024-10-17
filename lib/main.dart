@@ -1,6 +1,8 @@
+import 'package:digitalcardpe/features/authentication/widgets/registerscreen.dart';
 import 'package:digitalcardpe/screens/createcard.dart';
 import 'package:digitalcardpe/screens/intropage.dart';
 import 'package:digitalcardpe/screens/widgets/bussinessmen/bussinessmen.dart';
+import 'package:digitalcardpe/screens/widgets/cardpage/setcard.dart';
 import 'package:digitalcardpe/screens/widgets/professional/professional.dart';
 import 'package:digitalcardpe/screens/widgets/student/student.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
         // Home page route
         GoRoute(
           path: '/',
-          builder: (context, state) =>  const Intropage(),
+          builder: (context, state) =>  const Setcard(),
         ),
 
         GoRoute(
@@ -38,6 +40,10 @@ class MyApp extends StatelessWidget {
         GoRoute(
           path: '/bussinessmen',
           builder: (context, state) => const Bussinessmen(),
+        ),
+        GoRoute(
+          path: '/registerscreen',
+          builder: (context, state) => const Registerscreen(),
         ),
 
 

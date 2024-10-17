@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Ccolor {
+  static  Gradient Gprimary =  LinearGradient(
+    colors: [
+      const Color(0xFFB3E5FC).withOpacity(0.2), // Light blue color
+      const Color(0xFFFFE082), // Light yellow color
+    ],
+    begin: Alignment.topLeft,
+    end: Alignment.topRight,
+  );
   static const Color primary = Color(0xFFD85D00);
   static const Color accent = Color(0xFFFFE082);
   static const Color background = Color(0xFFF5F5F5);
@@ -13,6 +21,24 @@ class Ccolor {
 
   // Error colors
   static const Color error = Color(0xFFB00020);
+}
+class Cgradient{
+  static  Gradient primary =  LinearGradient(
+    colors: [
+      const Color(0xFFB3E5FC).withOpacity(0.2), // Light blue color
+      const Color(0xFFFFE082), // Light yellow color
+    ],
+    begin: Alignment.topLeft,
+    end: Alignment.topRight,
+  );
+  static  Gradient secondary =  LinearGradient(
+    colors: [
+      const Color(0xFFFFFFFF), // Light blue color
+      const Color(0xFFA6E7F4).withOpacity(0.5), // Light yellow color
+    ],
+    begin: Alignment.topLeft,
+    end: Alignment.centerLeft,
+  );
 }
 
 class Ctextstyle {
